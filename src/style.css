@@ -1,0 +1,33 @@
+body{
+    
+    margin: 100px 40% 1em;
+}
+
+#bodyStyle {
+    background-image:url('cardholder modif.jpg');
+    align-items: center; 
+    justify-content:center; 
+    align-content:center;
+} 
+#button{
+    background-color:black;
+    color:white; 
+    align-items: center; 
+    justify-content:center;
+  ;
+}
+
+#buttonHomePage{
+    background-color:black;
+    color:white; 
+    align-items: center; 
+    justify-content:center;  
+
+}
+
+h3{
+    color:black;
+    font-family:arial;
+
+}
+
