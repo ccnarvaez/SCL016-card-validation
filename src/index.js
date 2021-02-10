@@ -2,7 +2,8 @@
  // Validacion, importacion desde el modulo  
  import validator from './validator.js';
 
- console.log(validator);
+ console.log('ENTRO');
+ console.log(validator.maskify(1234567891234567));
  
 //0. Dinamismo pagina de inicio- pagina validacion
  let buttonClickHomePage=document.getElementById('buttonHomePage');
@@ -16,20 +17,23 @@
 
 //a. Almacenamiento de datos en variables
 
-let buttonClick=document.getElementById('button');
-buttonClick.addEventListener('click', oneFunction);
-function oneFunction(){
-    let cardNumber=document.getElementById('number').value;
-    return cardNumber;
+let buttonClick = document.getElementById('button');
+buttonClick.addEventListener('click', savingNumber);
 
-}
+function savingNumber (){
 
-//b. Mensajes de error por numeros no validos
-while (cardNumber==0||cardNumber==null) {
+    let creditCardNumber = document.getElementById('number').value;
+    console.log(creditCardNumber);
+
+    //b. Mensajes de error por numeros no validos
+    while (creditCardNumber ==0||creditCardNumber ==null||creditCardNumber.length<16) {
     alert("Por favor ingresa numero valido");
     break;
+    } 
+
 }
-//c. Llamar funcion validacion
+
+
 
 //d. ocultar ultimos 4 digitos
 
