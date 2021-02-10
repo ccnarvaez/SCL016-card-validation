@@ -2,13 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <title>TrueCard </title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
     <script src="index.js" type="module"></script>
+  </head>
+  <body id='bodyStyle'>
+
+    <header>
+    <!--Imagen logo-->
+        <img src='ShortCut.jpg' width='50 px' image-align='center'>  
+    </header>
+
+    <main>
+    <!--Pantalla de inicio--> 
+      <section id='homePage'>
+        <br></br>
+         <button type='button' id='buttonHomePage'>Iniciar</button>      
+      </section>
+      
+    <!--Pantalla de validacion-->
+      <section hidden id="validation">
+        <h3>Número de  Tarjeta</h3>
+            <input type='text' id='number'></input>
+                <br></br>
+            <button type='button' id='button'>Validar</button>
+      </section>
+ 
+
+      
+    </main>
+    <footer></footer>
+    
   </body>
 </html>
