@@ -1,28 +1,39 @@
-body{
-    
-    margin: 100px 40% 1em;
+body {
+    background-color:#6998c7;
+    margin-top: 200px;
 }
 
 #bodyStyle {
-    background-image:url('cardholder modif.jpg');
-    align-items: center; 
-    justify-content:center; 
-    align-content:center;
+    text-align: center;
+    background-image: url('arreglado.png');
+    background-size:2000px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 } 
 #button{
-    background-color:black;
-    color:white; 
-    align-items: center; 
-    justify-content:center;
-  ;
+  background-color:black;
+  color:white;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px
 }
 
 #buttonHomePage{
     background-color:black;
     color:white; 
-    align-items: center; 
-    justify-content:center;  
+    text-align: center;
+    font-size: 20px;
+    padding: 15px
 
+}
+
+#buttonValidation{
+    background-color:black;
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
 }
 
 h3{
@@ -30,4 +41,21 @@ h3{
     font-family:arial;
 
 }
+
+#validation {
+    text-align: center;
+    color:black;
+    font-family:arial;
+    margin-top: 0px
+    
+} 
+
+#validationMessage{
+    text-align: center;
+    color:black;
+    font-family:arial;
+
+}
+
+
 

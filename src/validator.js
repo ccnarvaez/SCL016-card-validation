@@ -1,65 +1,92 @@
 const validator = {
 
-  //1. Validacion tarjeta de credito
+  // 1. CARD VALIDATION: isValid
 
   isValid:(creditCardNumber)=>{
 
-    let creditCardStep1= 0;
+    //Scope general de este tramo
+    let creditCardStep1='';
+    let creditCardArrayToString=0;
     let finalAdittion=0;
     
+    // Tratamiento inicial: Obtengo un array en orden inverso 
+
+    let creditCardReverse= creditCardNumber.split('').reverse();
+    
+    // Se aplica loop para implementar criterio de Luhn sobre digitos pares
+
     for (let i=0; i<=creditCardNumber.length-1; i++){
 
-        // tratamiento numeros pares
-        if (i%2==0){
-          creditCardStep1+=creditCardNumber[i]*2
-        }
+      /* CRITERIO PARA DEFINICION DE POSICIONES PARES E IMPARES: 
+      Para la seleccion de las posiciones pares,se toma en cuenta el criterio del 
+      video de Michelle (https://www.youtube.com/watch?v=f0zL6Ot9y_w),
+      en el que:
 
-        // tratamiento impares
+              creditCardNumber[0]= posicion 1 (impar)
+              creditCardNumber[1]= posicion 2 (par)...
+      Por lo tanto cuando i=0,2,4,6...
+      en realidad me refiero a digitos en posiciones impares de acuerdo a este criterio
+      */
 
-        else{
-          creditCardStep1+=creditCardNumber[i];
+      
+
+   // Digito impar (creditCardNumber[0] string= posicion 1, creditCardNumber[2] = posicion 3)
+      if (i%2===0){
+        creditCardStep1+=creditCardReverse[i];
         }
+        
+   // Digito par
+
+      else {creditCardStep1+=creditCardReverse[i]*2;}
+            
     }
 
-  //Hacer suma global de los digitos internos
+    //Devuelvo conversion del array (obtengo cadena string) 
 
-    for (let j=0; j<=creditCardStep1.length-1; j++){
+      creditCardArrayToString= creditCardStep1.toString();
+    
+    //Hacer suma global de los digitos internos
 
-        finalAdittion+=parseInt(creditCardStep1.charAt(j));
+    for (let j=0; j<=creditCardArrayToString.length-1; j++){
+
+        finalAdittion+=parseInt(creditCardArrayToString.charAt(j));
     }
 
-  //Condicion de validez o invalidez
+    console.log(finalAdittion);
 
-   finalAdittion%10==0?alert('Tarjeta valida'):alert('Tarjeta no valida');
+    //Condicion de validez o invalidez
 
-  return finalAdittion;
-  },
+      if (finalAdittion%10===0){
+        return true;
+      }
+
+      else {return false;}
+
+  },  
+
+  
 
 
-  // 2. Maskify
+  // 2. CARD VALIDATION: MASKIFY
   maskify: (creditCardNumber)=>{
 
-  //Variable para contener nuevo numero de tarjeta enmascarado
   let cardMaskify='';
   
-  //Se desea sustituir el valor de los digitos de la tarjeta por '#', a excepcion de los ultimos 4
+  //Sustitucion por #
   
   for (let i=0; i< creditCardNumber.length; i++){
 
-    // Si la posicion i es menor a la posicion menos los ultimos 4, entonces se debe sustituir el valor por #
       if (i<creditCardNumber.length-4){
-        cardMaskify+='#';
-        
+        cardMaskify+='#';  
       }
 
-    // Cuando se trata de los ultimos numeros, se debe igualar al valor almacenado en creditCardNumber, en la posicion indicada
-      else{
-        cardMaskify+=creditCardNumber[i];
-      }
+      else{cardMaskify+=creditCardNumber[i];}
       
   }
   return cardMaskify;
  }
+
+
 };
 
 export default validator;
