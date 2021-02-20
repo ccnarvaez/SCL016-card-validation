@@ -1,18 +1,18 @@
 
- // Validacion, importacion desde el modulo  
+ // Import from module  
  import validator from './validator.js';
 
 
-//Dinamismo pagina de inicio- pagina validacion
- let buttonClickHomePage=document.getElementById('buttonHomePage');
- buttonClickHomePage.addEventListener('click', move1);
+//Dynamism: home page and validation page
+ let homePageButton=document.getElementById('homePageButton');
+ homePageButton.addEventListener('click', move1);
  
  function move1(){
      document.getElementById('validation').style.display='block';
-     document.getElementById('buttonHomePage').style.display='none';     
+     document.getElementById('homePageButton').style.display='none';     
  }
 
-//Almacenamiento de datos en variables
+//Storage credit card number using variables
 
 let buttonClick = document.getElementById('button');
 buttonClick.addEventListener('click', savingNumber);
@@ -20,38 +20,28 @@ buttonClick.addEventListener('click', savingNumber);
 
 function savingNumber (){
 
-    //Eventos asociados al boton "validar"
-   let creditCardNumber = document.getElementById('number').value; // Se guarda numero de tarjeta
-    document.getElementById('number').value=validator.maskify(creditCardNumber); // Se sustituyen valores por '#' luego de que el usuario ingrese numero
-
+    //Events what user start clicking "validar" button
+   let creditCardNumber = document.getElementById('number').value; // credit  card number variable
+    document.getElementById('number').value=validator.maskify(creditCardNumber); // Starting Maskify () function
+    let validationMessage=document.getElementById('validationSection'); // Showing isValid () function results 
     
-    //Mensajes de error por numeros no validos
+    //Error message when user write a non valid number
     while (creditCardNumber ==0||creditCardNumber ==null) {
         alert("Por favor ingresa numero valido");
         break;
     } 
 
-    
-    //Mensaje isValid
+    //isValid () messages
 
     if(validator.isValid(creditCardNumber)===true){
-      alert('Tarjeta Valida');
+      validationMessage.textContent="Su tarjeta es valida";
     }
 
-    else{alert('Tarjeta no valida');}
+    else{ validationMessage.textContent="Su tarjeta no  es valida";}
  
-
-    // Comprobaciones (eliminar al final)
-       console.log(creditCardNumber);
-       console.log(validator.maskify(creditCardNumber));
        
-
-  
-
-    
-
    
-}// este es el de la funcion no lo toques
+}// This is function curly bracket 
 
 
 

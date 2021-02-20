@@ -1,6 +1,7 @@
 body {
     background-color:#6998c7;
     margin-top: 200px;
+    line-height : 75px;
 }
 
 #bodyStyle {
@@ -9,24 +10,18 @@ body {
     background-size:2000px;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    line-height : 60px;
 
 } 
 #button{
   background-color:black;
   color:white;
   text-align: center;
-  font-size: 20px;
-  padding: 15px
+  font-size: 30px;
+  padding: 15px;
+ 
 }
 
-#buttonHomePage{
-    background-color:black;
-    color:white; 
-    text-align: center;
-    font-size: 20px;
-    padding: 15px
-
-}
 
 #buttonValidation{
     background-color:black;
@@ -39,6 +34,36 @@ body {
 h3{
     color:black;
     font-family:arial;
+    font-size: 200%;
+
+}
+
+#homePageButton{
+    background-color:black;
+    color:white; 
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+   
+
+}
+
+.numberWritting{
+    color:black;
+    font-family:arial;
+    font-size: 25px;
+    line-height : 25px;
+
+}
+
+.testingFooter{
+    background-color:rgb(255,255,255, 0.5);
+    text-align: center;
+    color:black;
+    font-family:arial;
+    font-size: 170%;
+    line-height : 55px;
+    margin-top: 183px;
 
 }
 
@@ -46,14 +71,18 @@ h3{
     text-align: center;
     color:black;
     font-family:arial;
-    margin-top: 0px
+    margin-top: 0px;
+    
     
 } 
 
-#validationMessage{
+#validationSection{
+    background-color:rgb(255,255,255, 0.5);
     text-align: center;
     color:black;
     font-family:arial;
+    font-size: 170%;
+    line-height : 55px;
 
 }
 

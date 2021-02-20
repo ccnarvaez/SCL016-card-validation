@@ -5,37 +5,42 @@
     <title>TrueCard </title>
     <link rel="stylesheet" href="style.css" />
     <script src="index.js" type="module"></script>
+
   </head>
-  
   <body id="bodyStyle">
-    <header>
-    <!--Imagen logo-->
-         
-    <br>
-        <img src="ShortCut.jpg" width="300 px">  
-    <br><br>
-       
+
+    <header>  
+        <!--Imagen logo-->   
+        <img src="ShortCut.jpg" width="300 px">        
     </header>
 
     <main>
     <!--Home page--> 
       <section id="homePage">
-        <br>
-         <button type="button" id="buttonHomePage">Iniciar</button>      
+         <button type="button" id="homePageButton">Iniciar</button>      
       </section>
       
     <!--Validation Page-->
       <section hidden id="validation">
+
         <h3>Número de  Tarjeta</h3>
-            <input type="text" id="number"><br><br>
-            <button type="button" id="button">Validar</button><br><br>
-            
+            <div>
+            <input type="text" id="number" class="numberWritting">
+            </div>
+            <div>
+            <button type="button" id="button">Validar</button>
+            </div>
+
       </section>
     
-       
-  
+     <!--Validation section--> 
+      <section id="validationSection">   
+      </section>
     </main>
-    <footer></footer>
+
+    <footer>
+       <h4 class="testingFooter"> Realiza tus transacciones en forma segura</h4>  
+    </footer>
     
   </body>
 

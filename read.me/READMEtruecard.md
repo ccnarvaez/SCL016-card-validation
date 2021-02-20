@@ -98,8 +98,6 @@ De este proceso nacio el prototipo base sobre el cual se trabajo en este proyect
 <img src="isValid1.jpg" alt="Prototipo baja fidelidad" width="200"/>
 <img src="isValid2.jpg" alt="Prototipo baja fidelidad" width="200"/>
 
-* Para seguir la linea del procedimiento indicado para ejecutar el algoritmo de Luhn, se convierte el valor ingresado en creditCardNumber a array (to split), y se revierte orden con reverse(). Se hacen pruebas omitiendo este paso, y se obtiene exactamente el mismo resultado, por lo que se presume que su omision no alterara el resultado.
-
 * Haciendo uso del metodo charAt() se consigue separar los caracteres ingresados por el usuario en variable creditCardNumber. Para generalizar procedimiento, se implementa un loop (for):
         
         creditCardNumber.charAt(0)= digito almacenado en posicion 0;
@@ -119,7 +117,6 @@ De este proceso nacio el prototipo base sobre el cual se trabajo en este proyect
 
       Por lo tanto cuando se tienen los digitos string en posiciones pares (i=0,2,4,6...i%2===0) en realidad me refiero a digitos en posiciones impares de acuerdo a este criterio
 
-* Previa realizacion de la suma de digitos internos, se realiza la conversion de creditCardStep1 de array a string, ya que, el metodo parseInt al ser aplicado sobre un array retorna NaN. Esta conversion se ejecuta con el metodo toString().
 
 * Para hacer la suma interna, se genera una nueva variable (finalAdittion), y en ella se almacena la suma de cada uno de los digitos (para ello se transforma el string a number [parseInt]). Este procedimiento se desarrolla en un nuevo ciclo 'for', ya que se requiere que la accion se repita 'creditCardStep1.length -1' veces.
 
