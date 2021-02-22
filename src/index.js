@@ -12,7 +12,7 @@
      document.getElementById('homePageButton').style.display='none';     
  }
 
-//Storage credit card number using variables
+//Stored credit card number using variables
 
 let buttonClick = document.getElementById('button');
 buttonClick.addEventListener('click', savingNumber);

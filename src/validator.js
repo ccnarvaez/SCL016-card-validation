@@ -4,7 +4,7 @@ const validator = {
 
   isValid:(creditCardNumber)=>{
 
-    //Scope general de este tramo
+    //General scope
     let creditCardStep1='';
     let finalAdittion=0;
     
