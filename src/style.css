@@ -3,7 +3,6 @@ body {
     margin-top: 200px;
     line-height : 75px;
 }
-
 #bodyStyle {
     text-align: center;
     background-image: url('arreglado.png');
@@ -11,51 +10,32 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     line-height : 60px;
-
 } 
-#button{
-  background-color:black;
-  color:white;
-  text-align: center;
-  font-size: 30px;
-  padding: 15px;
- 
-}
-
-
-#buttonValidation{
+.buttonStyle{
     background-color:black;
     color:white;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     padding: 15px;
 }
-
+.errorMessage{
+    color:rgba(255, 0, 0, 0.767);
+    text-align: center;
+    font-size: 25px;
+    font-weight:bold;
+}
 h3{
     color:black;
     font-family:arial;
-    font-size: 200%;
-
+    font-size: 180%;
+    line-height: 30px;
 }
-
-#homePageButton{
-    background-color:black;
-    color:white; 
-    text-align: center;
-    font-size: 30px;
-    padding: 15px;
-   
-
-}
-
 .numberWritting{
     color:black;
     font-family:arial;
     font-size: 25px;
     line-height : 25px;
-
 }
-
 .testingFooter{
     background-color:rgb(255,255,255, 0.5);
     text-align: center;
@@ -63,27 +43,23 @@ h3{
     font-family:arial;
     font-size: 170%;
     line-height : 55px;
-    margin-top: 183px;
-
+    margin-top: 185px;
 }
-
 #validation {
     text-align: center;
     color:black;
     font-family:arial;
     margin-top: 0px;
-    
-    
+    margin-bottom: 25px;   
 } 
-
 #validationSection{
     background-color:rgb(255,255,255, 0.5);
     text-align: center;
     color:black;
     font-family:arial;
     font-size: 170%;
+    font-weight:bold;
     line-height : 55px;
-
 }
 
 

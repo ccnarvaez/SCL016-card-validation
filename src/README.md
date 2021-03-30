@@ -34,7 +34,7 @@ Por eso, se desarrolla una herramienta sencilla de implementar (proceso de 2 pas
 ### Prototipo con papel y lápiz (blanco y negro)
 Se desarrolló esquema con ideas para desarrollo de app
 
-<img src="sketch_prototipo_baja_fidelidad.jpg" alt="Prototipo baja fidelidad" width="200"/>
+<img src="./readme/BajaFidelidad.jpg"  width="200"/>
 
 
 
@@ -49,23 +49,23 @@ Se desarrollaron tres modelos, y estos fueron testeados con 10 personas
 
 #### * MODELO A 
 
-<img src="ModeloA.jpg" alt="Prototipo baja fidelidad" width="200"/>
+<img src="./readme/ModeloA.jpg" alt="Prototipo baja fidelidad" width="200"/>
 
 
 #### * MODELO B
 
-<img src="ModeloB.jpg" alt="Prototipo baja fidelidad" width="200"/>
+<img src="./readme/ModeloB.jpg" alt="Prototipo baja fidelidad" width="200"/>
 
 
 #### * MODELO C
 
-<img src="ModeloC.jpg" alt="Prototipo baja fidelidad" width="200"/>
+<img src="./readme/ModeloC.jpg" alt="Prototipo baja fidelidad" width="200"/>
 
 #### * TEST NOMBRE APP
 
 Se desarrolloraron dos nombres para la app, y se procedio a testear aceptacion
 
-<img src="Logos.jpg" alt="Prototipo baja fidelidad" width="200"/>
+<img src="./readme/Logos.jpg" alt="Prototipo baja fidelidad" width="200"/>
 
 ### RESUMEN FEEDBACK RECIBIDO
 
@@ -81,7 +81,7 @@ Se desarrolloraron dos nombres para la app, y se procedio a testear aceptacion
 Una vez recibido el feedback sobre los modelos de testeo, se procedio a incluir modificaciones y observaciones obtenidas.
 De este proceso nacio el prototipo base sobre el cual se trabajo en este proyecto.
 
-<img src="cardholderOK.jpg" alt="Prototipo baja fidelidad" width="200"/>
+<img src="./readme/cardholderOK.jpg" alt="Prototipo baja fidelidad" width="200"/>
 
 ## 3. Interfaz de usuario (UI)
 
@@ -95,8 +95,8 @@ De este proceso nacio el prototipo base sobre el cual se trabajo en este proyect
 ### Ver el resultado si es válido o no
 
 * Se desarrolla planificacion mediante un esquema en papel y lapiz el procedimiento a seguir para completar pasos de algoritmo de Luhn (esta acción facilitó flujo de ideas, y organización de estructuras correctamente).
-<img src="isValid1.jpg" alt="Prototipo baja fidelidad" width="200"/>
-<img src="isValid2.jpg" alt="Prototipo baja fidelidad" width="200"/>
+<img src="./readme/isValid1.jpg" alt="Prototipo baja fidelidad" width="200"/>
+<img src="./readme/isValid2.jpg" alt="Prototipo baja fidelidad" width="200"/>
 
 * Haciendo uso del metodo charAt() se consigue separar los caracteres ingresados por el usuario en variable creditCardNumber. Para generalizar procedimiento, se implementa un loop (for):
         
@@ -126,9 +126,9 @@ De este proceso nacio el prototipo base sobre el cual se trabajo en este proyect
 ### Ocultar todos los dígitos de su número de tarjeta menos los últimos 4 caracteres.
 
 * Se planifica en un esquema hecho en papel y lapiz el procedimiento a seguir para completar pasos de algoritmo de Luhn (esta acción facilitó flujo de ideas, y organización de estructuras correctamente).
-<img src="maskify0.jpg" alt="Prototipo baja fidelidad" width="200"/>
+<img src="./readme/maskify0.jpg" alt="Prototipo baja fidelidad" width="200"/>
 
-<img src="maskify1.jpg" alt="Prototipo baja fidelidad" width="200"/>
+<img src="./readme/maskify1.jpg" alt="Prototipo baja fidelidad" width="200"/>
 
 * Este objetivo se logra mediante la sustitucion de valores en el string inicial (creditCardNumber) por '#' y su almacenamiento en una nueva variable llamada cardMaskify.
 

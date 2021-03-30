@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>TrueCard </title>
     <link rel="stylesheet" href="style.css" />
-    <script src="index.js" type="module"></script>
+    
 
   </head>
   <body id="bodyStyle">
@@ -18,20 +18,20 @@
     <main>
     <!--Home page--> 
       <section id="homePage">
-         <button type="button" id="homePageButton">Iniciar</button>      
+         <button type="button" id="homePageButton" class="buttonStyle">Iniciar</button>      
       </section>
       
     <!--Validation Page-->
       <section hidden id="validation">
-
-        <h3>Número de  Tarjeta</h3>
+         <h3>Número de  Tarjeta</h3>
             <div>
-            <input type="text" id="number" class="numberWritting">
-            </div>
+             <input type="text" id="number" class="numberWritting">
+              </div>
+               <div id="errorMessage" class="errorMessage">
+               </div>
             <div>
-            <button type="button" id="button">Validar</button>
-            </div>
-
+          <button type="button" id="button" class="buttonStyle">Validar</button>
+      </div>
       </section>
     
      <!--Validation section--> 
@@ -42,8 +42,10 @@
     <footer>
        <h4 class="testingFooter"> Realiza tus transacciones en forma segura</h4>  
     </footer>
-    
-  </body>
+
+  <script src="index.js" type="module"></script>
+  
+</body>
 
 </html>
 

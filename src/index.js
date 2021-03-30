@@ -2,9 +2,8 @@
  // Import from module  
  import validator from './validator.js';
 
-
 //Dynamism: home page and validation page
- let homePageButton=document.getElementById('homePageButton');
+const homePageButton=document.getElementById('homePageButton');
  homePageButton.addEventListener('click', move1);
  
  function move1(){
@@ -13,35 +12,30 @@
  }
 
 //Stored credit card number using variables
-
-let buttonClick = document.getElementById('button');
+const buttonClick = document.getElementById('button');
 buttonClick.addEventListener('click', savingNumber);
 
-
 function savingNumber (){
-
     //Events what user start clicking "validar" button
-   let creditCardNumber = document.getElementById('number').value; // credit  card number variable
-    document.getElementById('number').value=validator.maskify(creditCardNumber); // Starting Maskify () function
-    let validationMessage=document.getElementById('validationSection'); // Showing isValid () function results 
+    // credit  card number variable
+    const creditCardNumber = document.getElementById('number').value; 
+    // Starting Maskify () function
+    document.getElementById('number').value=validator.maskify(creditCardNumber); 
+    // Showing error message 
+    const errorMessage=document.getElementById('errorMessage'); 
+    // Showing isValid () function results 
+    const validationMessage=document.getElementById('validationSection'); 
     
-    //Error message when user write a non valid number
+    //Error message: non valid number
     while (creditCardNumber ==0||creditCardNumber ==null) {
-        alert("Por favor ingresa numero valido");
+        errorMessage.textContent="Por favor ingresa número válido";
         break;
     } 
-
     //isValid () messages
-
-    if(validator.isValid(creditCardNumber)===true){
-      validationMessage.textContent="Su tarjeta es valida";
-    }
-
-    else{ validationMessage.textContent="Su tarjeta no  es valida";}
- 
-       
-   
-}// This is function curly bracket 
+    validator.isValid(creditCardNumber)===true?
+        validationMessage.textContent="Su tarjeta es valida":
+        validationMessage.textContent="Su tarjeta no  es valida"; 
+}
 
 
 
