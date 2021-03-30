@@ -4,7 +4,7 @@
 
 Se desarrolla aplicación para validación de tarjetas de crédito, pensada como herramienta de apoyo 
 para negocios pequeños para el desarrollo de actividades cotidianas, o para ser anexada en página web
-(para hacer compras online), como paso previo al proceso de compra.
+(para hacer compras online), como paso previo al proceso de compra..
 
 ### 1.1 Definición del producto
 
