@@ -22,5 +22,18 @@
     "jest": "^26.6.1",
     "opener": "^1.5.1",
     "serve": "^11.0.0"
-  }
+  },
+  "description": "Se desarrolla aplicación para validación de tarjetas de crédito, pensada como herramienta de apoyo \r para negocios pequeños, para facilitar el desarrollo de actividades cotidianas, o para ser anexada en página web (para hacer compras online), como paso previo al proceso de pago.",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccnarvaez/SCL016-card-validation.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/ccnarvaez/SCL016-card-validation/issues"
+  },
+  "homepage": "https://github.com/ccnarvaez/SCL016-card-validation#readme"
 }

@@ -2,15 +2,15 @@ const validator = {
 
   // 1. CARD VALIDATION: isValid
 
-  isValid:(creditCardNumber)=>{
+  isValid:(creditCardNumber) => {
 
     //General scope
-    let creditCardStep1='';
+    let creditCardStep1 = '';
     let finalAdittion=0;
     
     
-    // Loop to complete Luhn algoritsm 
-    for (let i=0; i<=creditCardNumber.length-1; i++){
+    // Luhn algoritsm 
+    for (let i = 0; i <= creditCardNumber.length-1; i++){
       /* PAIR NUMBERS SELECTION: 
       To select pair positions, it was considerer counting option explained by Michelle
       -video reference: (https://www.youtube.com/watch?v=f0zL6Ot9y_w)-
@@ -19,17 +19,17 @@ const validator = {
               creditCardNumber[0]= position 1 (odd)
               creditCardNumber[1]= position 2 (pair)...
       */
-        i%2===0? creditCardStep1+=creditCardNumber[i]: 
-        creditCardStep1+=creditCardNumber[i]*2;    
+        i%2 === 0 ? creditCardStep1 += creditCardNumber[i]: 
+        creditCardStep1 += creditCardNumber[i]*2;    
     }
 
     //Adittion
-    for (let j=0; j<=creditCardStep1.length-1; j++){
+    for (let j = 0; j <= creditCardStep1.length-1; j++){
         finalAdittion+=parseInt(creditCardStep1.charAt(j));
     }
 
     //Credit card number validation
-      if (finalAdittion%10==0 && finalAdittion!==0){
+      if (finalAdittion%10 == 0 && finalAdittion !== 0){
         return true;
       }
       else{
@@ -42,10 +42,10 @@ const validator = {
       let cardMaskify='';
 
       //Replace first positions
-      for (let i=0; i< creditCardNumber.length; i++){
-          i<creditCardNumber.length-4?
-            cardMaskify+='#':
-            cardMaskify+=creditCardNumber[i];  
+      for (let i = 0; i < creditCardNumber.length; i++){
+          i <creditCardNumber.length-4 ?
+            cardMaskify += '#':
+            cardMaskify += creditCardNumber[i];  
       }
 
       return cardMaskify;

@@ -3,48 +3,59 @@
 ## 1. Resumen del proyecto
 
 Se desarrolla aplicación para validación de tarjetas de crédito, pensada como herramienta de apoyo 
-para negocios pequeños para el desarrollo de actividades cotidianas, o para ser anexada en página web
-(para hacer compras online), como paso previo al proceso de compra..
+para negocios pequeños, para facilitar el desarrollo de actividades cotidianas, o para ser anexada en página web (para hacer compras online), como paso previo al proceso de pago.
+
+## 1. Summary
+This app was created in order to validate credit cards numbers, it will offer support to small companies due to make easy daily activities, also, it could be part of a web page (online shopping) as previous step to payment.
 
 ### 1.1 Definición del producto
 
-* Quiénes son los principales usuarios de producto
+* Principales usuarios de producto
 
 Está orientado para facilitar transacciones, y generar un ambiente de pago seguro, para aquellas empresas
 pequeñas, o emprendimientos en fase de desarrollo, considerando que por su condición de "pequeña empresa" o pyme, no tienen acceso a sofisticados softwares de seguridad.
 Los usuarios son jóvenes adultos - adultos mayores, en edades de productividad (edades 18 - 70).
 
-* Cuáles son los objetivos de estos usuarios en relación con tu producto?
+* Main users of this product
+This app was thougth to facilitate transactions, and to create a secure payment mathod to all those small companies or businesses in development phase, because them, being in growth, maybe don't have access to sophisticated security software.
+The main users are people between 18-70 years old
+
+* Objetivos de estos usuarios al obtener la app
 
 El objetivo del usuario que usa la aplicación es el de corroborar medios de pago, disminuyendo posibilidades
 de caer en estafas, detectando a tiempo factores de riesgos.
 Esta herramienta les permitirá establecer procesos claros al momento de cerrar un trato con un cliente, transparentando transacciones.
 
+* User's reasons to get this app
+The objetive of an user who is using this app is to be sure that a payment method is secure, decreasing chances to being scammed, detecting risk factors early.
+This app allows to establish good processes when they need to close a deal with a client, making transactions secures.
 
-* Cómo crees que el producto que estás creando está resolviendo sus problemas
-
+* Aporte del producto a la resolucion de problemas
 Cuando se inicia un emprendimiento son muchos los factores de riesgo, en especial si no cuentas con ningún tipo de experiencia en el manejo de negocios.
 Este hecho, puede ser aprovechado por personas y organizaciones malintencionadas para sacar provecho de la vulnerabilidad asociada a la inexperiencia.
 Las tarjetas de crédito constituyen un método de pago, que pese a todos los beneficios que ofrece al usuario, ha sido tradicionalmente usado como medio de estafas.
 Por eso, se desarrolla una herramienta sencilla de implementar (proceso de 2 pasos), el usuario puede incluirla en sus procesos de pago sin ningún tipo de problema, para garantizar transacciones seguras que apoyen el crecimiento de su negocio.
 
+* Product contribution to solving a problem 
+When someone starts a new business there are many risk factors, specially is you do not have any experience in business management.
+This fact, could be use by malicious individuals and organizations to take advantage of this weakness.
+Thinking in all this reasons an easy app was created (two-step process), so the users could take in their payment transactions.
 
 ## 2. UX (Diseño de experiencia de usuario)
 
-### Prototipo con papel y lápiz (blanco y negro)
+### Prototipo con papel y lápiz (blanco y negro)/ low fidelity prototype
 Se desarrolló esquema con ideas para desarrollo de app
 
 <img src="./readme/BajaFidelidad.jpg"  width="200"/>
 
 
-
-### Prototipo de alta fidelidad
+### Prototipo de alta fidelidad / high fidelity prototype
 
 ### TESTEO
 
 *Link a figma: https://www.figma.com/file/qcqHM9giJucOW7O3Yzw5Rj/Prototipos-testing?node-id=29%3A3
 
-#### Prototipos para testeo:
+#### Prototipos para testeo/ Testing prototypes:
 Se desarrollaron tres modelos, y estos fueron testeados con 10 personas
 
 #### * MODELO A 
@@ -77,11 +88,25 @@ Se desarrolloraron dos nombres para la app, y se procedio a testear aceptacion
 
 * Colores claros en recuadro de ingreso de numero de tarjeta.
 
+### FEEDBACK SUMMARY
+
+* Keep same font size in buttons with same hierarchy.
+
+* Use white color for frame used to smooth image in model B
+
+* Erase card numbers in the background image (it could avoid confusions).
+
+* Use clear colors in input text, where user would write card number
+
 ### PROTOTIPO IMAGEN FINAL
 Una vez recibido el feedback sobre los modelos de testeo, se procedio a incluir modificaciones y observaciones obtenidas.
 De este proceso nacio el prototipo base sobre el cual se trabajo en este proyecto.
 
 <img src="./readme/cardholderOK.jpg" alt="Prototipo baja fidelidad" width="200"/>
+
+### FINAL PROTOTYPE
+Taking all recomendations received in testing process, the prototype selected by users was modified.
+Testing with users allows to create the final prototype to start coding this project.
 
 ## 3. Interfaz de usuario (UI)
 
@@ -91,8 +116,12 @@ De este proceso nacio el prototipo base sobre el cual se trabajo en este proyect
 * Cuando se hace click 'validar' se registra accion a traves de un addEventListener()
 * Se escribe funcion asociada al evento click: savingNumber (), esta funcion almacena numero de tarjeta en variable 'creditCardNumber' y ejecuta funcion validator.maskify (para sustituir numeros por '#'). Esta funcion tambien desencadena los mensajes de error asociados al tipo de data ingresada (no 0, no casilla vacia), y a su vez, es la que almacena los mensajes que muestran el resultado de la validacion.
 
+### Writing card number to start validation
+* User should write number in the input text
+* When "validar" button is clicked, that number is saved in a variable. The event addEventListener allowed to complete this task.
+* savingNumber() is the funtion asociated to click event, and this contents the variable which contents card number and isValid and Maskify (changing first card digits into #) callbacks. Also error messages are started when the event activate this function.
 
-### Ver el resultado si es válido o no
+### Definir resultado como válido (o no)
 
 * Se desarrolla planificacion mediante un esquema en papel y lapiz el procedimiento a seguir para completar pasos de algoritmo de Luhn (esta acción facilitó flujo de ideas, y organización de estructuras correctamente).
 <img src="./readme/isValid1.jpg" alt="Prototipo baja fidelidad" width="200"/>

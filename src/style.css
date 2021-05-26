@@ -2,6 +2,7 @@ body {
     background-color:#6998c7;
     margin-top: 200px;
     line-height : 75px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 #bodyStyle {
     text-align: center;
@@ -12,55 +13,96 @@ body {
     line-height : 60px;
 } 
 .buttonStyle{
-    background-color:black;
+    width: 100px;
+    height: 50px;
+    background-color:blue;
+    border-color:blue;
+    border-radius: 10px;
+    border-style: solid;
     color:white;
     text-align: center;
-    font-size: 30px;
+    font-size: 17px;
     padding: 15px;
+    margin:30px;
 }
 .errorMessage{
-    color:rgba(255, 0, 0, 0.767);
+    background-color:#ffcccc;
+    color:#990000;
     text-align: center;
-    font-size: 25px;
-    font-weight:bold;
-}
-h3{
-    color:black;
-    font-family:arial;
-    font-size: 180%;
-    line-height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
 }
 .numberWritting{
-    color:black;
-    font-family:arial;
-    font-size: 25px;
+    color:rgb(73, 72, 72);
+    font-size: 20px;
+    text-align: center;
     line-height : 25px;
+    background-color: rgb(236, 236, 236);
+    border: 1px;
+    border-color:rgb(195, 196, 197);
+    border-style: solid;
+    border-radius: 5px;
+    width: 300px;
 }
-.testingFooter{
-    background-color:rgb(255,255,255, 0.5);
-    text-align: center;
-    color:black;
-    font-family:arial;
-    font-size: 170%;
-    line-height : 55px;
-    margin-top: 185px;
+.oneR{
+    background-color: white;
+    grid-column: 2 / 3;
+    grid-row: 1;
+    padding:20px;
+    border: 1px;
+    border-bottom: 0px;
+    border-color:rgb(195, 196, 197);
+    border-style: solid;
 }
-#validation {
-    text-align: center;
-    color:black;
-    font-family:arial;
-    margin-top: 0px;
-    margin-bottom: 25px;   
-} 
-#validationSection{
-    background-color:rgb(255,255,255, 0.5);
-    text-align: center;
-    color:black;
-    font-family:arial;
-    font-size: 170%;
-    font-weight:bold;
-    line-height : 55px;
+.twoR{
+    background-color:white;
+    grid-column: 2 / 3;
+    grid-row: 2;
+    border: 1px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-color:rgb(195, 196, 197);
+    border-style: solid;   
 }
+.threeR{
+    background-color:white;
+    grid-column: 2 / 3;
+    grid-row: 3;
+    border: 1px;
+    border-top: 0px;
+    border-color:rgb(195, 196, 197);
+    border-style: solid;
+    color:black; 
+}
+.welcomeTxt{
+    display:flex;
+    justify-content: center;
+    line-height: normal;
+    font-size: 23px;
+    color:black;
+    font-weight: 1000;
+}
+.wrapper{
+    background-size: 100px, 300px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
+}
+.wrapper2{
+    background-color: white;
+    border: 1px;
+    border-color:rgb(195, 196, 197);
+    border-style: solid;
+    border-radius: 5px;
+    margin-left: 20px;  
+    width: 400px; 
+}
+.zeroR{
+    background-color: white;
+    line-height: 0; 
+}
+
 
 
 

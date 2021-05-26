@@ -4,44 +4,49 @@
     <meta charset="utf-8">
     <title>TrueCard </title>
     <link rel="stylesheet" href="style.css" />
-    
-
   </head>
   <body id="bodyStyle">
-
-    <header>  
-        <!--Logo image-->
-
-        <img src="ShortCut.jpg" width="300 px">        
-    </header>
-
-    <main>
+  <main>
     <!--Home page--> 
-      <section id="homePage">
-         <button type="button" id="homePageButton" class="buttonStyle">Iniciar</button>      
-      </section>
-      
-    <!--Validation Page-->
-      <section hidden id="validation">
-         <h3>Número de  Tarjeta</h3>
+    <section id="homePage">
+      <div class ="wrapper">
+        <div class ="oneR">
+          <img src="ShortCut.jpg" width="200px">
+        </div> 
+        <div class ="twoR" id="homePagSection">  
+          <div>
+            <div class ="welcomeTxt">
+                Bienvenido!
+            </div> 
+            <div class ="welcomeTxt">
+                Validemos un número de tarjeta
+            </div> 
+        </div>
+          <div>  
+            <button type="button" id="homePageButton" class="buttonStyle">Iniciar</button> 
+          </div>
+        </div> 
+        <!--Validation Page-->
+        <div hidden id="validation" class ="twoR">
+          <div class="wrapper2">
+            <label>Número de  Tarjeta</label>
             <div>
-             <input type="text" id="number" class="numberWritting">
-              </div>
-               <div id="errorMessage" class="errorMessage">
-               </div>
+              <input type="text" id="number" class="numberWritting" placeholder="xxxx-xxxx-xxxx-xxxx">
+            </div>
+            <div id="errorMessage" class="errorMessage">
+            </div>
             <div>
-          <button type="button" id="button" class="buttonStyle">Validar</button>
-      </div>
-      </section>
-    
-     <!--Validation section--> 
-      <section id="validationSection">   
-      </section>
-    </main>
+              <button type="button" id="button" class="buttonStyle">Validar</button>
+            </div>
+          </div>
+        </div>  
+          <!--Validation section--> 
+          <div hidden id="validationSection" class="threeR">   
+          </div> 
+      </div>   
+    </section>    
+  </main>
 
-    <footer>
-       <h4 class="testingFooter"> Realiza tus transacciones en forma segura</h4>  
-    </footer>
 
   <script src="index.js" type="module"></script>
   
